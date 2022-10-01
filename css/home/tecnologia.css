@@ -1,0 +1,104 @@
+.tecnologia-bg{
+  background-color: var(--c11);
+  box-shadow: inset 0 80px var(--c0), inset 0 -80px var(--c0);
+}
+
+.tecnologia{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.tecnologia-imagem img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.tecnologia-conteudo{
+  padding-top: 160px;
+  padding-bottom: 160px;
+}
+
+.tecnologia-conteudo > span{
+  display: block;
+  margin-bottom: 20px;
+  color: var(--c5);
+}
+
+.tecnologia-conteudo h2{
+  color: var(--c0);
+  margin-bottom: 32px;
+}
+
+.tecnologia-conteudo h2 span{
+  color: var(--p1);
+}
+
+.tecnologia-conteudo > p{
+  color: var(--c5);
+  margin-bottom: 20px;
+}
+
+.tecnologia-conteudo a{
+  margin-bottom: 80px;
+  display: block;
+}
+
+.tecnologia-vantagens{
+  display: flex;
+  gap: 40px;
+}
+
+.tecnologia-vantagens h3{
+  margin-bottom: 8px;
+  color: var(--c0);
+  width: max-content; /* o título não quebra mais */
+}
+
+.tecnologia-vantagens img{
+  width: 24px;
+  margin-bottom: 8px;
+}
+
+.tecnologia-vantagens p{
+  color: var(--c5);
+}
+
+.link{
+  color: var(--p1);
+  font: 1.5rem/1.5 "Poppins", sans-serif;
+  text-transform: uppercase;
+  display: inline;
+  text-decoration: underline;
+}
+
+.link:hover{
+  color: var(--c0);
+}
+
+@media (max-width: 800px){
+  .tecnologia-bg{
+    box-shadow: initial;
+  }
+  .tecnologia{
+    grid-template-columns: 1fr;
+  }
+  .tecnologia-conteudo{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .tecnologia-imagem{
+    display: none;
+  }
+  .tecnologia a{
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 600px){
+  .tecnologia-vantagens{
+    flex-direction: column;
+  }
+}
